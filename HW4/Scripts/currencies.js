@@ -7,8 +7,9 @@
             for (var i = 0; i < data.length; i++) {
                 var tr = $("<tr></tr>");
                 var td = $("<td></td>").text(data[i].Name);
-                var td2 = $("<td></td>").text(data[i].ValueInEuros);
-                tr.append(td).append(td2);
+                var td2 = $("<td></td>").text(data[i].Description);
+                var td3 = $("<td></td>").text(data[i].ValueInEuros);
+                tr.append(td).append(td2).append(td3);
                 $('#currencyTBody').append(tr);
             }
             console.log(data);

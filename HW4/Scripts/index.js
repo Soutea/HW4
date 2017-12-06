@@ -2,7 +2,7 @@
     //console.log("Hello bunny o.o");
 
     $.ajax({ // function that starts the HTTP request to the server
-        "url": "currency/list",
+        "url": "/currency/list",
         "success": function (data) { //if the request is accepted, success function will run
             for (var i = 0; i < data.length; i++) {
                 $('#currencySelect1').append($("<option></option>").attr("value", data[i].Id).text(data[i].Name));
