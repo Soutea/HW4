@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Online Currency Converter</h1>
+    <p class="lead">A web application currently supporting four different currencies.</p>
+    <p><a href="Home/Currencies" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-xs-2 col-sm-offset-1 input-group"><input class="form-control" id="currency1Amount" type="number"></div>
+    <div class="col-xs-2 input-group"><select class="form-control" id="currencySelect1"> </select></div>
+    <div class="col-xs-2 input-group"><input class="form-control" id="currency2Amount" type="number"></div>
+    <div class="col-xs-2 input-group">
+        <select class="form-control" id="currencySelect2">
+            <option value="1">SEK</option>
+            <option value="2">EUR</option>
+        </select>
+    </div>
+    <div class="col-xs-2 input-group"><button id="convertButton" class="btn btn-primary">Press me</button></div>
+</div>
